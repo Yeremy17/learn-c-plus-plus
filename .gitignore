@@ -1,0 +1,67 @@
+# =========================
+# Visual Studio (básico)
+# =========================
+
+# Carpeta de configuración local (NO subir)
+.vs/
+
+# Archivos de usuario
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# =========================
+# Compilación
+# =========================
+
+# Carpetas generadas al compilar
+Debug/
+Release/
+x64/
+x86/
+bin/
+obj/
+x64/Debug
+
+
+# Archivos temporales de compilación
+*.log
+*.tlog
+*.lastbuildstate
+*.idb
+*.pdb
+*.ilk
+*.obj
+
+# =========================
+# IntelliSense / caché
+# =========================
+
+*.ipch
+*.aps
+*.ncb
+*.opendb
+*.VC.db
+*.VC.opendb
+
+# =========================
+# Archivos temporales
+# =========================
+
+*.tmp
+*.temp
+
+# =========================
+# Otros
+# =========================
+
+# Paquetes locales (si usas NuGet)
+packages/
+
+# Archivos generados automáticamente
+Generated Files/
+
+# Base de datos local
+*.sqlite
+*.db
