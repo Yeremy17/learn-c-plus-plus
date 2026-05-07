@@ -1,8 +1,8 @@
 // =============================================================================
 //  DATA STRUCTURES EN C++ / FASE 0
-//  Tema   : Punteros, Referencias y Memoria Dinamica
-//  Autor  : (tu nombre)
-//  Repo   : github.com/(tu usuario)/data-structures-cpp
+//  Tema   : Pointers, References y Dinamic Memory
+//  Autor  : Yeremy Acuña Chavez
+//  Repo   : https://github.com/yeremyacuna
 // =============================================================================
 //
 //  ÍNDICE
@@ -26,7 +26,7 @@
 
 #include <iostream>    // cout, endl
 
-// Usamos este alias para no escribir "std::" en cada línea
+// Usamos este alias para no escribir "std::" en cada linea
 using namespace std;
 
 
@@ -42,7 +42,7 @@ void seccion(const string& titulo) {
 
 
 // =============================================================================
-//  MAIN / todos los ejemplos corren aquí en orden
+//  MAIN / todos los ejemplos corren aqui en orden
 // =============================================================================
 int main() {
 
@@ -53,13 +53,13 @@ int main() {
 
     // Declarar una variable normal
     int x = 42;
-    //  └─ int  : tipo (4 bytes en la mayoría de sistemas)
+    //  └─ int  : tipo (4 bytes en la mayoria de sistemas)
     //  └─ x    : nombre con el que tú la conoces
     //  └─ = 42 : valor almacenado en esa casilla de RAM
 
     // El operador  &  (address-of) devuelve la direccion de memoria de la variable
     cout << "Valor de x     : " << x << "\n";   // 42
-    cout << "Direccion de x : " << &x << "\n";   // algo como 0x7ffd1a2b  (varía cada ejecucion)
+    cout << "Direccion de x : " << &x << "\n";   // algo como 0x7ffd1a2b  (varia cada ejecucion)
 
     // Cada vez que ejecutas el programa la direccion cambia,
     // pero x siempre vive en UNA casilla con UNA direccion única.
@@ -87,7 +87,7 @@ int main() {
     cout << "Valor de ptr   : " << ptr << "\n";  // direccion de x   (ej. 0x7ffd1a2b)
     cout << "Direccion de x : " << &x << "\n";  // mismo número → ptr apunta a x
 
-    // Declaracion + inicializacion en una sola línea (lo mas común):
+    // Declaracion + inicializacion en una sola linea (lo mas común):
     int* ptr2 = &x;     // ptr2 tambien apunta a x
     cout << "ptr2           : " << ptr2 << "\n";  // misma direccion
 
@@ -98,12 +98,12 @@ int main() {
     seccion("[3] Desreferenciar / *ptr");
 
     // El operador  *  sobre un puntero significa:
-    // "ve a esa direccion de memoria y trae el valor que hay ahí"
+    // "ve a esa direccion de memoria y trae el valor que hay ahi"
     //
     //   DECLARACIÓN:   int* ptr  → * significa "esto es un puntero"
     //   EXPRESIÓN:     *ptr      → * significa "desreferencia: dame el valor"
     //
-    // Son dos usos distintos del mismo símbolo / no los confundas.
+    // Son dos usos distintos del mismo simbolo / no los confundas.
 
     int  a = 55;
     int* p = &a;      // p apunta a a
@@ -127,7 +127,7 @@ int main() {
 
     *pNum = 999;
     // └─ va a la direccion guardada en pNum (la casilla de num)
-    //    y escribe 999 ahí dentro
+    //    y escribe 999 ahi dentro
     //    → num cambio sin mencionarla directamente
 
     cout << "Despues / num = " << num << "\n";   // 999
@@ -161,7 +161,7 @@ int main() {
     // Inicializar siempre tus punteros, ya sea con una direccion o con nullptr:
     int  val = 7;
     int* pVal = &val;    // ok / apunta a algo
-    int* pVacio = nullptr; // ok / explícitamente vacío
+    int* pVacio = nullptr; // ok / explicitamente vacio
     // int* pBasura;       // MAL / contiene basura, desreferenciar es undefined behavior
 
 
@@ -234,7 +234,7 @@ int main() {
     // =========================================================================
     seccion("[8] Memoria dinamica / new / delete");
 
-    // Hasta ahora todo vivía en el STACK (se libera automaticamente al salir del scope).
+    // Hasta ahora todo vivia en el STACK (se libera automaticamente al salir del scope).
     // Con  new  reservamos en el HEAP: la memoria dura hasta que nosotros la liberemos.
     // Esto es esencial para construir nodos de linked lists, arboles, grafos, etc.
 
@@ -274,7 +274,7 @@ int main() {
     //         └─ new int[5] : reserva 5 casillas de int CONTIGUAS en el heap
     //                         devuelve la direccion de la primera casilla
 
-    // Acceso por índice / igual que un array normal:
+    // Acceso por indice / igual que un array normal:
     arr[0] = 10;
     arr[1] = 20;
     arr[2] = 30;
@@ -300,7 +300,7 @@ int main() {
 
     arr = nullptr;  // buena practica
 
-    // Diferencia crítica:
+    // Diferencia critica:
     //   delete  heap1;     → libera un solo elemento
     //   delete[] arr;      → libera el array completo
 
@@ -308,7 +308,7 @@ int main() {
     // =========================================================================
     // [10] PREVIEW / NODO PARA DATA STRUCTURES
     // =========================================================================
-    seccion("[10] Preview / así usaremos esto en data structures");
+    seccion("[10] Preview / asi usaremos esto en data structures");
 
     // Cada estructura que vamos a construir usa exactamente lo que vimos arriba.
     // Este es un nodo basico de Linked List (lo haremos en detalle en la Fase 1):

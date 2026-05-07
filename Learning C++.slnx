@@ -8,4 +8,6 @@
     <File Path="README.md" />
   </Folder>
   <Project Path="01-Pointers&amp;References/01-Pointers&amp;References.vcxproj" Id="d8e7808a-85b1-4eed-b617-9ba58f3546ab" />
+  <Project Path="02-StaticArray/02-StaticArray.vcxproj" Id="07e23e8f-d413-4ffb-b203-0a219b6761dd" />
+  <Project Path="03-DynamicArray/03-DynamicArray.vcxproj" Id="447e573e-a85b-4388-b2e6-fce35bc65f06" />
 </Solution>

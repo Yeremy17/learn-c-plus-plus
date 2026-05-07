@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{d8e7808a-85b1-4eed-b617-9ba58f3546ab}</ProjectGuid>
-    <RootNamespace>My01PointersReferences</RootNamespace>
+    <ProjectGuid>{07e23e8f-d413-4ffb-b203-0a219b6761dd}</ProjectGuid>
+    <RootNamespace>My02StaticArray</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,7 +127,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="pointers_and_references.cpp" />
+    <ClCompile Include="static_array.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="StaticArray.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
