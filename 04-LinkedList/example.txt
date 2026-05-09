@@ -1,0 +1,109 @@
+#include <iostream>
+#include "LinkedList.h"
+
+using namespace std;
+
+// =============================================================================
+//  CLASS — Usuario
+// =============================================================================
+
+class Usuario {
+public:
+    int    id;
+    string nombre;
+    int    edad;
+
+    Usuario() : id(0), nombre(""), edad(0) {}
+
+    Usuario(int id, string nombre, int edad) {
+        this->id     = id;
+        this->nombre = nombre;
+        this->edad   = edad;
+    }
+
+    // necesario para search / contains / removeValue
+    bool operator==(const Usuario& other) const {
+        return id == other.id;
+    }
+
+    void mostrar() const {
+        cout << "[" << id << "] " << nombre << " — " << edad << " años\n";
+    }
+
+    // necesario para print() y printInfo() de LinkedList
+    friend ostream& operator<<(ostream& os, const Usuario& u) {
+        os << "[" << u.id << "] " << u.nombre;
+        return os;
+    }
+};
+
+// =============================================================================
+//  MAIN
+// =============================================================================
+
+int main() {
+
+    LinkedList<Usuario> lista;
+
+    // ── Registrar usuarios ───────────────────────────────────────────────────
+    cout << "\n--- Registrando usuarios ---\n";
+    lista.pushBack(Usuario(1, "Ana",    22));
+    lista.pushBack(Usuario(2, "Carlos", 35));
+    lista.pushBack(Usuario(3, "Maria",  28));
+    lista.pushBack(Usuario(4, "Luis",   19));
+    lista.pushBack(Usuario(5, "Sofia",  31));
+    lista.printInfo();
+
+    // ── Mostrar todos ────────────────────────────────────────────────────────
+    cout << "\n--- Lista de usuarios ---\n";
+    for (int i = 0; i < lista.getSize(); i++) {
+        lista.get(i).mostrar();
+    }
+
+    // ── Buscar por id ────────────────────────────────────────────────────────
+    cout << "\n--- Buscar id=3 ---\n";
+    int idx = lista.search(Usuario(3, "", 0));   // operator== solo compara id
+    if (idx != -1)
+        lista.get(idx).mostrar();
+
+    // ── Eliminar por id ──────────────────────────────────────────────────────
+    cout << "\n--- Eliminar id=2 ---\n";
+    lista.removeValue(Usuario(2, "", 0));
+    for (int i = 0; i < lista.getSize(); i++)
+        lista.get(i).mostrar();
+
+    // ── Ordenar por edad (bubble sort manual) ────────────────────────────────
+    cout << "\n--- Ordenados por edad (menor a mayor) ---\n";
+
+    // copiamos a un array temporal para ordenar
+    int n = lista.getSize();
+    Usuario* arr = new Usuario[n];
+    for (int i = 0; i < n; i++)
+        arr[i] = lista.get(i);
+
+    // bubble sort por edad
+    for (int i = 0; i < n - 1; i++) {
+        for (int j = 0; j < n - 1 - i; j++) {
+            if (arr[j].edad > arr[j+1].edad) {
+                Usuario tmp = arr[j];
+                arr[j]      = arr[j+1];
+                arr[j+1]    = tmp;
+            }
+        }
+    }
+
+    for (int i = 0; i < n; i++)
+        arr[i].mostrar();
+
+    delete[] arr;
+
+    // ── Agregar al frente (usuario prioritario) ──────────────────────────────
+    cout << "\n--- Agregar usuario prioritario al frente ---\n";
+    lista.pushFront(Usuario(0, "Admin", 40));
+    for (int i = 0; i < lista.getSize(); i++)
+        lista.get(i).mostrar();
+
+    cout << "\nTotal usuarios: " << lista.getSize() << "\n\n";
+
+    return 0;
+}

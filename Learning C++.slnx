@@ -10,4 +10,8 @@
   <Project Path="01-Pointers&amp;References/01-Pointers&amp;References.vcxproj" Id="d8e7808a-85b1-4eed-b617-9ba58f3546ab" />
   <Project Path="02-StaticArray/02-StaticArray.vcxproj" Id="07e23e8f-d413-4ffb-b203-0a219b6761dd" />
   <Project Path="03-DynamicArray/03-DynamicArray.vcxproj" Id="447e573e-a85b-4388-b2e6-fce35bc65f06" />
+  <Project Path="04-LinkedList/04-LinkedList.vcxproj" Id="d2237d24-50ab-49c0-a275-7155301a1e89" />
+  <Project Path="05-Stack/05-Stack.vcxproj" Id="d3c73bb4-4700-438a-bece-c0b34af5db61" />
+  <Project Path="06-Queue/06-Queue.vcxproj" Id="751a46ca-0044-45f7-9be3-2f146b0e28f8" />
+  <Project Path="07-LinkedDoubleList/07-LinkedDoubleList.vcxproj" Id="bc2de2f2-5ac1-4b8a-b3a2-8b4ca3b9e44f" />
 </Solution>
