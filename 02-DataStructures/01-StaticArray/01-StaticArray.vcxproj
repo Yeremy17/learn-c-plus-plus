@@ -24,6 +24,7 @@
     <ProjectGuid>{07e23e8f-d413-4ffb-b203-0a219b6761dd}</ProjectGuid>
     <RootNamespace>My02StaticArray</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>01-StaticArray</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

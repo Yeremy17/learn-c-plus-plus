@@ -1,3 +1,3 @@
-###### c++ codex
+###### c++ code
 
 ###### Yeremy ac
