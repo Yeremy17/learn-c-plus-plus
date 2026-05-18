@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{490ad93f-6d45-4b2f-aa52-cd22d8c418af}</ProjectGuid>
-    <RootNamespace>My01BasicSorts</RootNamespace>
+    <ProjectGuid>{12a8aba1-7d4a-4913-89bd-80fadbd636b2}</ProjectGuid>
+    <RootNamespace>MergeSort</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,12 +127,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="basic_sorts.cpp" />
-    <ClCompile Include="sorts.cpp" />
+    <ClInclude Include="Sort.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BasicSorts.h" />
-    <ClInclude Include="Sorts.h" />
+    <ClCompile Include="merge_sort.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{490ad93f-6d45-4b2f-aa52-cd22d8c418af}</ProjectGuid>
-    <RootNamespace>My01BasicSorts</RootNamespace>
+    <ProjectGuid>{fe9f56f0-8285-4cb0-a661-62b0811d4817}</ProjectGuid>
+    <RootNamespace>My0100MyBubbleSort</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,12 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="basic_sorts.cpp" />
-    <ClCompile Include="sorts.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="my_bubble_sort.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BasicSorts.h" />
-    <ClInclude Include="Sorts.h" />
+    <ClInclude Include="my_problems.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

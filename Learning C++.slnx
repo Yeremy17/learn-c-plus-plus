@@ -18,7 +18,13 @@
     <Project Path="02-DataStructures/05-Stack/05-Stack.vcxproj" Id="d3c73bb4-4700-438a-bece-c0b34af5db61" />
     <Project Path="02-DataStructures/06-Queue/06-Queue.vcxproj" Id="751a46ca-0044-45f7-9be3-2f146b0e28f8" />
   </Folder>
-  <Folder Name="/003 - Sorts/">
+  <Folder Name="/003 - SortingAlgorithms/">
     <Project Path="03-SortingAlgorithms/01-BasicSorts/01-BasicSorts.vcxproj" Id="490ad93f-6d45-4b2f-aa52-cd22d8c418af" />
+  </Folder>
+  <Folder Name="/003 - SortingAlgorithms/Problemitas/">
+    <Project Path="03-SortingAlgorithms/Problemitas/01.00-MyBubbleSort/01.00-MyBubbleSort.vcxproj" Id="fe9f56f0-8285-4cb0-a661-62b0811d4817" />
+    <Project Path="03-SortingAlgorithms/Problemitas/MergeSort/MergeSort.vcxproj" Id="12a8aba1-7d4a-4913-89bd-80fadbd636b2" />
+    <Project Path="03-SortingAlgorithms/Problemitas/QuickSort/QuickSort.vcxproj" Id="dd802f41-8323-4bf8-9047-26d8704c8203" />
+    <Project Path="03-SortingAlgorithms/Problemitas/SelectionSort/SelectionSort.vcxproj" Id="374e787f-0a53-4511-b537-bc31e416f211" />
   </Folder>
 </Solution>

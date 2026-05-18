@@ -2,6 +2,7 @@
 #include <iostream>
 #include <vector>
 
+/*
 using namespace std;
 
 // =====================================================
@@ -134,4 +135,4 @@ int main()
     cout << elemento.puntuaciones;
 
     return 0;
-}
+}*/
